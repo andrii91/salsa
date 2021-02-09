@@ -19,6 +19,7 @@
       padding-top: 170px;
 
       .container:before {
+            background: url(../images/himg.svg) center no-repeat;
         bottom: inherit;
         top: 0;
         width: 89vw;
@@ -55,7 +56,17 @@
     }
     .menu {
       display: flex;
+      position: static;
+      background: 0 0;
+      max-width: 100%;
+      li {
+        a {
+          color: #fff;
+        }
+      }
     }
-
+.nav.fixed {
+    background: #fff;
+    }
   }
 }

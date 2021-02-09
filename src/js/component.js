@@ -35,7 +35,13 @@ $(document).ready(function () {
     var filesUploaded = ko.observableArray([]);
 
     function addFileToList(file) {
+      $('#filedrag, .filedrag-title').hide();
       filesUploaded.push(new File(file));
+      
+      $('.upload-results').css({
+         'margin-top': '26px',
+        'margin-bottom': '44px'
+      })
     }
 
     function File(newFile) {
@@ -113,6 +119,7 @@ $(document).ready(function () {
 
       // remove submit button
       //    submitbutton.style.display = "none";
+      
     }
 
   }
@@ -143,10 +150,10 @@ $(document).ready(function () {
   function ParseFile(file) {
 
     Output(
-      "<div class=\"file-info\"><span>" + file.name +
+      "<span><span>" + file.name +
       //		"</span> type: <span>" + file.type +
-      "</span> | size: <span>" + file.size +
-      "</span> bytes</div>"
+      "</span></span> <span style=\"margin-left: 5px; margin-right: 5px;\"> <span>" + file.size +
+      "</span> bytes</span>"
     );
 
   }
@@ -617,7 +624,7 @@ $(document).ready(function () {
   $('#nav-icon').click(function () {
     $(this).toggleClass('open');
     $(this).parents('nav').toggleClass('open');
-    $('nav .menu').slideToggle(200);
+//    $('nav .menu').toggleClass('open');
   });
 
 
@@ -635,8 +642,7 @@ $(document).ready(function () {
     });
     
     $('.menu a').click(function(){
-      $('#nav-icon, .nav').removeClass('open');
-      $('.menu').hide();
+      $('#nav-icon, .nav, .menu').removeClass('open');
     })
   } else {
     $('.projects-item .title').each(function () {
