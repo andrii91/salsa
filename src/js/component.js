@@ -671,13 +671,13 @@ $(document).ready(function () {
         variableWidth: true
       });
     } else {
-      $('.projects-item .title').each(function () {
+      /*$('.projects-item .title').each(function () {
         if ($(this).height() < 144) {
           $(this).parents('.projects-item ').find('.img').css({
             'height': '438px',
           })
         }
-      })
+      })*/
     }
   });
 
