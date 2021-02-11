@@ -3,6 +3,8 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+      .our_job-item {
+        margin-bottom: 40px;
+      }
 	}
 }

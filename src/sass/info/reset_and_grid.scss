@@ -340,17 +340,17 @@ html {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: vw(40px);
+  padding-left: vw(40px);
   width: 100%;
 }
 
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .container {
-    max-width: 1440px;
+    max-width: vw(1440px);
   }
-}
+}*/
 
 .container-fluid {
   width: 100%;
@@ -366,8 +366,8 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: vw(-20px);
+  margin-left: vw(-20px);
 }
 
 .no-gutters {
@@ -390,8 +390,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: vw(20px);
+  padding-left: vw(20px);
 }
 
 .col {

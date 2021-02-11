@@ -235,7 +235,7 @@
 
 
 
-/*  .nav.fixed .menu li a {
+  /*  .nav.fixed .menu li a {
     color: #fff;
   }*/
 
@@ -376,11 +376,11 @@
 
     li {
       &:nth-child(2) {
-      img {
-//        margin-bottom: -4px;
+        img {
+          //        margin-bottom: -4px;
+        }
       }
-    }
-    
+
       img {
         max-width: 87px;
         max-height: 26px;
@@ -451,16 +451,18 @@
     position: static;
     width: 100vw;
     height: 92.53333333333333vw;
-  .gm-style-iw.gm-style-iw-c {
-    padding: 14px;
 
-    h6, p {
-      font-size: 10px;
-      line-height: 15px;
+    .gm-style-iw.gm-style-iw-c {
+      padding: 14px;
+
+      h6,
+      p {
+        font-size: 10px;
+        line-height: 15px;
+
+      }
 
     }
-    
-  }
   }
 
   .contacts-item {
@@ -509,6 +511,7 @@
 
   .footer {
     padding: 58px 0;
+
     .logo-footer {
       max-width: 118px;
       margin-bottom: 45px;
@@ -541,12 +544,89 @@
       line-height: 15px;
     }
   }
+
   .projects-item .projects-content {
     position: relative;
     bottom: 0;
     left: 0;
   }
+
   .projects-item {
     min-height: inherit;
   }
+
+  .head-item {
+    max-width: 463px;
+  }
+
+  .projects-item_right p {
+    max-width: 355px;
+  }
+
+  .projects {
+    padding-top: 80px;
+  }
+
+  .projects-item .title,
+  .projects-item p {
+    max-width: 100%;
+  }
+
+  .col-xl-4,
+  [class*="col-"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .projects-item {
+    padding-bottom: 16px;
+  }
+
+  .our_job-item .content {
+    max-width: calc(100% - 88px);
+  }
+
+  .team-item,
+  .team-item img {
+    border-radius: 8px;
+  }
+
+  .team-item .team-content:before {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .head-img img {
+    width: 100%;
+  }
+
+  .head .container:before {
+    height: 900px;
+  }
+
+  .order-btn {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 16px 48px;
+    border-radius: 8px;
+
+
+
+    &.white {
+      border-radius: 8px;
+
+
+    }
+  }
+  .team {
+    padding: 80px 0 40px;
+  }
+  .our_job {
+    padding: 80px 0;
+  }
+
 }
