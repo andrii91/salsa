@@ -565,6 +565,10 @@
 
   .projects {
     padding-top: 80px;
+    .row {
+      margin-left: -26px;
+      margin-right: -26px;
+    }
   }
 
   .projects-item .title,
@@ -624,6 +628,10 @@
   }
   .team {
     padding: 80px 0 40px;
+     .row {
+      margin-left: -26px;
+      margin-right: -26px;
+    }
   }
   .our_job {
     padding: 80px 0;
