@@ -140,6 +140,7 @@ body {
 }
 
 .logo {
+  display: inline-block;
   svg {
     width: inherit;
     height: vw(75px);
