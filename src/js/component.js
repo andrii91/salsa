@@ -41,7 +41,7 @@ function kitcut( text, limit) {
   if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
     text = text.substr(0, lastSpace);
   }
-  return text + "...";
+  return text;
 }
 
   var ViewModel = function () {
